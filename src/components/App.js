@@ -114,7 +114,10 @@ export default function App() {
   console.log(drumState);
   return (
     <div id="drum-machine">
-      <h2 id="display">{drumState.pressed}</h2>
+      <h1 className="title-text">Drum Machine</h1>
+      <div className="display-text">
+        <h2 id="display">{drumState.pressed}</h2>
+      </div>
       <div className="drum-pad-container">{drumPads}</div>
     </div>
   );
