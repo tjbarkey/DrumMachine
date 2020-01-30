@@ -1,3 +1,5 @@
+$size: 100vw;
+
 .border-style {
   border-radius: 4px;
 }
@@ -10,10 +12,10 @@
 
 .drum-pad {
   @extend .border-style;
-  width: 14vw;
-  height: 14vw;
+  width: $size * 0.14;
+  height: $size * 0.14;
   float: left;
-  margin: 0.5vw;
+  margin: $size * 0.005;
   background-color: blue;
   text-align: center;
   vertical-align: middle;
@@ -23,27 +25,26 @@
   @extend .border-style;
   @extend .center-this;
   transform: translate(-80%, -50%);
-  width: 45vw;
-  height: 45vw;
-  padding: 1vw;
+  width: $size * 0.45;
+  height: $size * 0.45;
+  padding: $size * 0.01;
   background-color: lightslategrey;
 }
 
 .display-text {
   background-color: grey;
-  width: 30vw;
+  width: $size * 0.3;
   height: 60px;
   @extend .center-this;
   transform: translate(40%, -50%);
 }
 
 #drum-machine {
-  min-width: 800px;
   @extend .center-this;
   transform: translate(-50%, -50%);
-  width: 90vw;
+  width: $size * 0.9;
   background-color: lightgray;
-  height: 80vh;
+  height: $size * 0.7;
 }
 
 .title-text {
